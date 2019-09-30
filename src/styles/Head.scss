@@ -1,0 +1,155 @@
+
+
+.head{
+    height: 80vh;
+    width: 100vw;
+    // background: red;
+    background-image: linear-gradient(140deg, #1c789d, #0a4354);
+    padding-top: 20px;
+    position: relative;
+}
+
+
+.links{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 70vw;
+    margin: 0 auto;
+    // margin-top: 10px;
+    div{
+        color: white;
+        font-weight: 600;
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 1s all;
+
+        &:after {
+            margin-top:4px; 
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: white;
+            transition: width .3s;
+        }
+        
+        &:hover{
+             &:after {
+                 width: 100%;
+             }
+        }
+
+
+    }
+
+    @media screen and (max-width: 600px) {
+
+        display:none;
+        }
+}
+
+.scroll{
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    left:50%;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    line-height: 20px;
+    // display: flex;
+    transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    margin-top: 0px;
+    // align-items: center;
+    // align-self: center;
+
+    // transition: 0.3s all;
+
+    .icon{
+        position: relative;
+        top:0px;
+        animation:out 0.3s forwards;
+        cursor: pointer;
+    }
+
+    &:hover{
+        .icon{
+            animation:myship 0.3s forwards;
+            animation-direction:alternate;
+
+        }
+    }
+    @keyframes myship{
+        from {top: 0px;} 
+        to{top:10px;} 
+    }
+    @keyframes out{  
+        from {top: 10px;} 
+        to{top:0px;} 
+    }
+
+}   
+
+.menu{
+    color:white;
+position: absolute;
+    z-index: 11;
+    left:20px;
+@media screen and (min-width: 600px) {
+display:none;
+}
+}
+
+.hero{
+    position: absolute;
+    top:50%;
+    left:50%;
+    color:white;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    // word-spacing: 10px;
+    width: 90vw;
+//    white-space: nowrap;
+
+
+    letter-spacing: 4px;
+}
+
+.overlay{
+    position: fixed;
+    background:rgba(0, 0, 0, 0.856);
+    width: 0vw;
+    height:100vh;
+    z-index: 10;
+    transition: 0.5s all;   
+    overflow: hidden;
+}
+
+.ti{
+    width: 100vw;
+}
+
+.inner{
+    color: white;
+    text-align: center;
+    font-size: 4vh;
+    position: relative;
+    top:50%;
+    transform: translate(0,-50%);
+    font-weight: 700;
+
+    *{transition: 0.3 all;
+        cursor: pointer;
+        margin-bottom: 20px;
+        &:hover{
+            background: white;
+            color:black;
+        }
+    }
+}
