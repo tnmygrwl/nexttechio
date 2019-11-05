@@ -294,7 +294,7 @@ export default class Main extends Component {
                             <Col className="title">06 Contact</Col>
                         </Row>
                         <Row>
-                            <Col xs="6">
+                            <Col sm="6">
                                 <Iframe url="https://maps.google.com/maps?q=next%20tech%20lab&t=&z=15&ie=UTF8&iwloc=&output=embed"
                                     width="100%"
                                     height="450px"
@@ -305,9 +305,9 @@ export default class Main extends Component {
                                     position="relative" />
 
                             </Col>
-                            <Col xs="1"></Col>
-                            <Col xs="4" className="contact">
-                                    
+                            <Col sm="1"></Col>
+                            <Col sm="4" className="contact">
+                                    <br></br>
                                     <div className="title">JOIN US</div>
                                     <div>We conduct recruitments every semester. Message our Facebook page to apply</div>
                                     <br/>

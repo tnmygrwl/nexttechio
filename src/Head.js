@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import './styles/Head.scss'
 import Fade from 'react-reveal/Fade'; // Importing Zoom effect
-
 import { FaAngleDown } from 'react-icons/fa';
+import { FiMenu, FiX ,FiUser} from 'react-icons/fi';
 
-import { FiMenu, FiX } from 'react-icons/fi';
 
 
 export default class Head extends Component {
@@ -20,6 +19,7 @@ export default class Head extends Component {
 
     render() {
         return (<div>
+
             <div className={this.state.toggle ? 'overlay ti' : 'overlay'} >
                 <div className='inner'>
                     <div>Work</div>
@@ -27,6 +27,7 @@ export default class Head extends Component {
                     <div>People</div>
                     <div>Blog</div>
                     <div>Outreach</div>
+                    <div>Login</div>
                 </div>
 
             </div>
@@ -46,6 +47,7 @@ export default class Head extends Component {
                         <div>People</div>
                         <div>Blog</div>
                         <div>Outreach</div>
+                        <div> <FiUser size={24}/></div>
 
                     </div>
 
