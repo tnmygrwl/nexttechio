@@ -3,6 +3,7 @@ import './styles/Head.scss'
 import Fade from 'react-reveal/Fade'; // Importing Zoom effect
 import { FaAngleDown } from 'react-icons/fa';
 import { FiMenu, FiX ,FiUser} from 'react-icons/fi';
+import { BrowserRouter, Route, NavLink, Switch } from 'react-router-dom'
 
 
 
@@ -27,7 +28,7 @@ export default class Head extends Component {
                     <div>People</div>
                     <div>Blog</div>
                     <div>Outreach</div>
-                    <div>Login</div>
+                    <NavLink to="/login"><div>Login</div></NavLink>
                 </div>
 
             </div>
@@ -47,7 +48,8 @@ export default class Head extends Component {
                         <div>People</div>
                         <div>Blog</div>
                         <div>Outreach</div>
-                        <div> <FiUser size={24}/></div>
+                        <NavLink to="/login"> <div> <FiUser size={24}/></div></NavLink>
+                       
 
                     </div>
 

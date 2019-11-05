@@ -136,7 +136,9 @@ display:none;
 }
 
 .inner{
-    color: white;
+    color: white ;
+    div {color:white;
+         }
     text-align: center;
     font-size: 4vh;
     position: relative;
@@ -150,6 +152,7 @@ display:none;
         &:hover{
             background: white;
             color:black;
+            text-decoration: none;
         }
     }
 }

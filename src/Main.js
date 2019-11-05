@@ -1,11 +1,9 @@
 import React, { Component } from 'react'
 import { Button } from 'reactstrap';
 import Fade from 'react-reveal/Fade'; // Importing Zoom effect
-import { Container, Row, Col } from 'reactstrap';
-import Iframe from 'react-iframe'
-
-import { FiFacebook, FiInstagram, FiLinkedin,FiGithub } from "react-icons/fi";
-
+import { Container, Row, Col } from 'reactstrap'; //for row & column
+import Iframe from 'react-iframe'   //for the map
+import { FiFacebook, FiInstagram, FiLinkedin,FiGithub } from "react-icons/fi"; //icons
 
 
 import './styles/Main.scss'
