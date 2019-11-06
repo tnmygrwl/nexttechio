@@ -20,7 +20,7 @@ export default class Head extends Component {
 
     render() {
         return (<div>
-
+{/* <NavLink to="/dashboard"><div>Test</div></NavLink> */}
             <div className={this.state.toggle ? 'overlay ti' : 'overlay'} >
                 <div className='inner'>
                     <div>Work</div>

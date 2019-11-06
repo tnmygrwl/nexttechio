@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { FiArrowLeft } from "react-icons/fi"; //icons
 import './styles/login.scss';
 import Fade from 'react-reveal/Fade'; // Importing Zoom effect
-import { NavLink } from 'react-router-dom'
+import { NavLink,Redirect } from 'react-router-dom'
 
 
 import {
@@ -17,7 +17,25 @@ import 'react-awesome-button/dist/themes/theme-blue.css';
 
 export default class Login extends Component {
 
+    state={redirectToReferrer:false}
+    auttt = ()=>{
+        // console.log('Authenticated ...')
+        this.props.fakeAuth(()=>{
+            this.setState({redirectToReferrer:true})
+        })
+        
+    }
+    // constructor(props){
+    //     super(props);
+    //     console.log('login page')
+    // }
     render() {
+        const redirectToReferrer  = this.state.redirectToReferrer
+
+            if (redirectToReferrer === true) {
+          return <Redirect to='/dashboard'/>
+            }
+
         return <div className='cont'>
             <NavLink to="/">    <FiArrowLeft size={30} /></NavLink>
             <Fade className="top">
@@ -50,8 +68,9 @@ export default class Login extends Component {
                             <div className='space'></div>
                             <div className='space'></div>
 
-                            
-                            <AwesomeButton size="large" type="primary">Go > </AwesomeButton>
+
+
+                            <AwesomeButton size="large" type="primary" onPress={this.auttt}>Go > </AwesomeButton>
 
 
                         </div>
