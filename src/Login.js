@@ -47,7 +47,9 @@ export default class Login extends Component {
                                 <span class="label">Password</span>
                                 <span class="border"></span>
                             </label>
-                            <br></br><br></br>
+                            <div className='space'></div>
+                            <div className='space'></div>
+
                             
                             <AwesomeButton size="large" type="primary">Go > </AwesomeButton>
 

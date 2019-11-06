@@ -1,16 +1,24 @@
 
 .cont{
-    padding: 20px ;
+    padding: 20px;
     background-image: linear-gradient(140deg, #273c75, #40739e);
 width: 100vw;
 height: 100vh;
+overflow: hidden;
 
 
 }
 
 .logincont{
     width: 400px;
-    height: 300px;
+    height: 320px;
+    @media screen and (max-width: 500px) {
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        border-radius: 0px;
+
+        }
     // position: absolute;
     // left: 50%;  // box-shadow: 0 0 10px -5px;
     // top:50%;
