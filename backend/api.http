@@ -1,0 +1,7 @@
+POST http://localhost:5000/achievements
+Content-Type: application/json
+
+{
+    "name" : "Chicagowars",
+    "description" : "We won"
+}
