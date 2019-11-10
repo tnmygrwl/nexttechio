@@ -3,7 +3,7 @@ import './styles/Head.scss'
 import Fade from 'react-reveal/Fade'; // Importing Zoom effect
 import { FaAngleDown } from 'react-icons/fa';
 import { FiMenu, FiX ,FiUser} from 'react-icons/fi';
-import { BrowserRouter, Route, NavLink, Switch } from 'react-router-dom'
+import {  NavLink,  } from 'react-router-dom'
 
 
 
