@@ -69,13 +69,13 @@ export default class Main extends Component {
                         <Row>
                             <Col xs="6">
                                 <div className='imgg'>
-                                    <img src={'https://image.freepik.com/free-vector/flat-robot-collection-with-different-poses_23-2147723814.jpg'} width='100%' />
+                                    <img src={'./images/minsky.png'} width='100%' />
                                 </div>
                             </Col>
                             <Col xs="5">
                                 <h3>Minisky Lab</h3>
-                                Understanding architechture that exhibit 'intelligence' and deploying novel models to solve real world problems.
-                                <br /> <br />
+                                <i><h6>Artificial Intelligence</h6></i>
+                                Understanding architectures that exhibit “intelligence” and deploying novel models to solve real world problems.<br /> <br />
                                 <a href={'http://www.google.com'}>LEARN MORE</a>
 
                             </Col>
@@ -91,15 +91,16 @@ export default class Main extends Component {
                             <Col xs="1"></Col>
                             <Col xs="5">
                                 <h3>Pausch Lab</h3>
-                                Understanding architechture that exhibit 'intelligence' and deploying novel models to solve real world problems.
-                                <br /> <br />
+                                <i><h6>Extended Reality</h6></i>
+
+                                Defining the interfaces of the future with the help of immersive technologies.<br /> <br />
                                 <a href={'http://www.google.com'}>LEARN MORE</a>
 
                             </Col>
 
                             <Col xs="5">
                                 <div className='imgg'>
-                                    <img src={'https://image.freepik.com/free-vector/flat-robot-collection-with-different-poses_23-2147723814.jpg'} width='100%' />
+                                    <img src={'./images/pausch.png'} width='120%' />
                                 </div>
                             </Col>
 
@@ -112,13 +113,17 @@ export default class Main extends Component {
                         <Row>
                             <Col xs="6">
                                 <div className='imgg'>
-                                    <img src={'https://image.freepik.com/free-vector/flat-robot-collection-with-different-poses_23-2147723814.jpg'} width='100%' />
+                                    <img src={'./images/satoshi.png'} width='100%' />
                                 </div>
                             </Col>
                             <Col xs="5">
                                 <h3>Satoshi Lab</h3>
-                                Understanding architechture that exhibit 'intelligence' and deploying novel models to solve real world problems.
-                                <br /> <br />
+                                <i><h6>Blockchain and Cryptography
+
+</h6></i>
+
+                                Focusing on blockchain protocol analysis, security and development of Decentralised application on framework like ethereum and hyperledger.
+<br /> <br />
                                 <a href={'http://www.google.com'}>LEARN MORE</a>
 
                             </Col>
@@ -134,8 +139,13 @@ export default class Main extends Component {
                         <Row>
                             <Col xs="1"></Col>
                             <Col xs="5">
-                                <h3>Tesla Lab</h3>
-                                Understanding architechture that exhibit 'intelligence' and deploying novel models to solve real world problems.
+                                <h3>IOT Lab</h3>
+                                <i><h6>Internet of Things
+
+</h6></i>
+
+Working on cutting edge technology, connecting multiple device, appliances, electronics and other ‘things’ to proliferate the standards of day-to-day life.
+
                                 <br /> <br />
                                 <a href={'http://www.google.com'}>LEARN MORE</a>
 
@@ -143,10 +153,33 @@ export default class Main extends Component {
 
                             <Col xs="5">
                                 <div className='imgg'>
-                                    <img src={'https://image.freepik.com/free-vector/flat-robot-collection-with-different-poses_23-2147723814.jpg'} width='100%' />
+                                    <img src={'./images/iot.png'} width='120%' />
                                 </div>
                             </Col>
 
+                        </Row>
+                    </Fade>
+
+
+
+                    <Space />
+                    <Space />
+
+                    <Fade>
+                        <Row>
+                            <Col xs="6">
+                                <div className='imgg'>
+                                    <img src={'./images/tesla.png'} width='100%' />
+                                </div>
+                            </Col>
+                            <Col xs="5">
+                                <h3>Tesla Lab</h3>
+                                <i><h6>Electrical System</h6></i>
+
+                                Researching on Smart Grids and load forecasting to improve transmission system and decrease power losses.<br /> <br />
+                                <a href={'http://www.google.com'}>LEARN MORE</a>
+
+                            </Col>
                         </Row>
                     </Fade>
 

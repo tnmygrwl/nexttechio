@@ -12,13 +12,36 @@ import {
     Route,Redirect,withRouter
 } from "react-router-dom";
 import Login from './Login';
+import Axios from 'axios';
 
 
 const fakeAuth={
     isAuthenticated:false,
-    authenticate(cb){
-        this.isAuthenticated = true
-        setTimeout(cb,100)
+    authenticate(name,pass,cb,rej){
+
+        Axios.post('http://localhost:5000/api/user/auth',{
+            name:name,
+            password:pass
+        }).then((token)=>{
+            // console.log(token.data)
+            if(token.data===1){
+                this.isAuthenticated = true
+                setTimeout(cb,100)
+            }
+            else{
+                this.isAuthenticated = false
+                setTimeout(rej,100)
+            }
+        }).catch(()=>{
+            this.isAuthenticated = false
+            setTimeout(rej,100)
+        })
+
+        
+
+
+        
+        
     },
     signout(cb){
         this.isAuthenticated=false
@@ -64,10 +87,10 @@ let PrivateRoute =  ({ component:Component, ...rest}) =>(
 
 export default class Routes extends React.Component {
 
-    childCallback = (cb)=>{
+    propcall = (name,pass,cb,rej)=>{
         console.log('Authenticated ...')
-        fakeAuth.authenticate() // call the authen for allowing the dashboard link
-        setTimeout(cb,100); /// calls the callback so that it can redirect in the child component
+        fakeAuth.authenticate(name,pass,cb,rej) // call the authen for allowing the dashboard link
+        // setTimeout(cb,100); /// calls the callback so that it can redirect in the child component
     }
     
 
@@ -94,13 +117,14 @@ export default class Routes extends React.Component {
 
                     </Route>
                     <Route path="/login">
-                    <Login fakeAuth={this.childCallback}/> 
+                    <Login fakeAuth={this.propcall}/> 
 
                     </Route>
 
                     <PrivateRoute path="/dashboard" component={Dashboard} />
                         {/* <Dashboard/> */}
                         {/* {redirectToReferrer===true?<Redirect to='/dashboard' />:null} */}
+                    <Route path='*' exact={true} component={()=>{return (<h4 >404 </h4>)}} />
 
                 </Switch>
             </Router>
