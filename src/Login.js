@@ -4,7 +4,10 @@ import './styles/login.scss';
 import Fade from 'react-reveal/Fade'; // Importing Zoom effect
 import { NavLink, Redirect } from 'react-router-dom'
 
-import QuickEncrypt from 'quick-encrypt'
+
+import { Spinner } from 'reactstrap';
+
+// import QuickEncrypt from 'quick-encrypt'
 
 import {
     AwesomeButton,
@@ -18,14 +21,17 @@ import 'react-awesome-button/dist/themes/theme-blue.css';
 
 export default class Login extends Component {
 
-    state = { redirectToReferrer: false }
+    state = { redirectToReferrer: false,loading:false }
+
     auttt = (event) => {
+        this.setState({loading:true})
         // console.log('Authenticated ...')
         this.props.fakeAuth(this.state.user,this.state.pass,() => {
-            this.setState({ redirectToReferrer: true })
+            this.setState({ redirectToReferrer: true,loading:false })
         }
         ,()=>{
-            this.setState({error:true})
+            this.setState({error:true,loading:false})
+            
         })
 
         event.preventDefault();
@@ -82,6 +88,9 @@ export default class Login extends Component {
                                 <label>Password</label>
                             </div>
                             {this.state.error?<p className='red'>Failed to Authenticate</p>:null}
+                            
+                         {this.state.loading?   <div className='whiteoverlay'></div>:null}
+                            {this.state.loading? <Spinner className='loadings' color="primary" />:null}
 
                         </div>
                         <AwesomeButton size="large" type="primary" >Go > </AwesomeButton>
