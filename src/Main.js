@@ -73,11 +73,9 @@ export default class Main extends Component {
                                 </div>
                             </Col>
                             <Col xs="5">
-                                <h3>Minisky Lab</h3>
+                                <h3>McArthy Lab</h3>
                                 <i><h6>Artificial Intelligence</h6></i>
                                 Understanding architectures that exhibit “intelligence” and deploying novel models to solve real world problems.<br /> <br />
-                                <a href={'http://www.google.com'}>LEARN MORE</a>
-
                             </Col>
                         </Row>
                     </Fade>
@@ -94,7 +92,6 @@ export default class Main extends Component {
                                 <i><h6>Extended Reality</h6></i>
 
                                 Defining the interfaces of the future with the help of immersive technologies.<br /> <br />
-                                <a href={'http://www.google.com'}>LEARN MORE</a>
 
                             </Col>
 
@@ -124,7 +121,6 @@ export default class Main extends Component {
 
                                 Focusing on blockchain protocol analysis, security and development of Decentralised application on framework like ethereum and hyperledger.
 <br /> <br />
-                                <a href={'http://www.google.com'}>LEARN MORE</a>
 
                             </Col>
                         </Row>
@@ -147,7 +143,6 @@ export default class Main extends Component {
 Working on cutting edge technology, connecting multiple device, appliances, electronics and other ‘things’ to proliferate the standards of day-to-day life.
 
                                 <br /> <br />
-                                <a href={'http://www.google.com'}>LEARN MORE</a>
 
                             </Col>
 
@@ -177,7 +172,6 @@ Working on cutting edge technology, connecting multiple device, appliances, elec
                                 <i><h6>Electrical System</h6></i>
 
                                 Researching on Smart Grids and load forecasting to improve transmission system and decrease power losses.<br /> <br />
-                                <a href={'http://www.google.com'}>LEARN MORE</a>
 
                             </Col>
                         </Row>
@@ -229,16 +223,18 @@ Working on cutting edge technology, connecting multiple device, appliances, elec
 
                                     <div class="column">
                                         <div className="imageContainer">
-                                            <div className="t2">Developer Week Hackathon</div>
-                                            <div className="t3">SAN FRANCISCO, USA</div>
+                                            <div className="t2">India HCI Conference 2019</div>
+                                            <div className="t3">Pausch Lab</div>
+                                            <div className="t3">4 papers presented by the lab</div>
                                             <div className="imgFlex">
                                                 <img src="https://images.unsplash.com/photo-1519455953755-af066f52f1a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80" width={'100%'} /></div>
                                         </div>
 
 
                                         <div className="imageContainer">
-                                            <div className="t2">Developer Week Hackathon</div>
-                                            <div className="t3">SAN FRANCISCO, USA</div>
+                                            <div className="t2">Hack your Reality! 2019</div>
+                                            <div className="t3">Pausch Lab</div>
+                                            <div className="t3">XR hackathon by Accenture, made it to the top 5</div>
                                             <div className="imgFlex">
                                                 <img src="https://images.unsplash.com/photo-1515463138280-67d1dcbf317f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" width={'100%'} /></div>
                                         </div>
@@ -250,17 +246,19 @@ Working on cutting edge technology, connecting multiple device, appliances, elec
 
 
                                         <div className="imageContainer">
-                                            <div className="t2">Developer Week Hackathon</div>
-                                            <div className="t3">SAN FRANCISCO, USA</div>
+                                            <div className="t2">ICTM 2019</div>
+                                            <div className="t3">McArthy Lab</div>
+                                            <div className="t3">Memebers of McArthy Lab presented medical AI papers</div>
                                             <div className="imgFlex">
                                                 <img src="https://images.unsplash.com/photo-1515463138280-67d1dcbf317f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" width={'100%'} /></div>
                                         </div>
 
                                         <div className="imageContainer">
-                                            <div className="t2">Developer Week Hackathon</div>
-                                            <div className="t3">SAN FRANCISCO, USA</div>
+                                            <div className="t2">Developer Week Hackathon 2019</div>
+                                            <div className="t3">Satoshi Lab</div>
+                                            <div className="t3">San Francisco hacks</div>
                                             <div className="imgFlex">
-                                                <img src="https://images.unsplash.com/photo-1519455953755-af066f52f1a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80" width={'100%'} /></div>
+                                                <img src="https://drive.google.com/file/d/1CxkBWZx9OQD-5ldVADfS8PcnI_cDkc-p/preview" width={'100%'} /></div>
                                         </div>
                                     </div>
                                 </div>
@@ -271,56 +269,8 @@ Working on cutting edge technology, connecting multiple device, appliances, elec
 
                     </Container>
                 </Fade>
-
-
                 <Fade>
-                    <Container className="container fi">
-
-                        <Row>
-                            <Col className="title">05 BLOG</Col>
-                        </Row>
-                        <br/>
-                        <Row>
-                            <Col>
-                                <div className='gallery'>
-
-                                    <div class="column">
-
-
-
-                                        <div className="imageContainer">
-                                            <div className="t2">Developer Week Hackathon</div>
-                                            <div className="t3">SAN FRANCISCO, USA</div>
-                                            <div className="imgFlex">
-                                                <img src="https://images.unsplash.com/photo-1515463138280-67d1dcbf317f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" width={'100%'} /></div>
-                                        </div>
-
-                                    </div>
-
-
-                                    <div class="column">
-
-
-                                        <div className="imageContainer">
-                                            <div className="t2">Developer Week Hackathon</div>
-                                            <div className="t3">SAN FRANCISCO, USA</div>
-                                            <div className="imgFlex">
-                                                <img src="https://images.unsplash.com/photo-1515463138280-67d1dcbf317f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" width={'100%'} /></div>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                            </Col>
-                        </Row>
-
-                        <Button className="center" outline color="primary">READ MORE</Button>{' '}
-
-                    </Container>
-                </Fade>
-
-                <Fade>
-                    <Container className="container">
+                    <Container id="reach" className="container">
                         <Row>
                             <Col className="title">06 Contact</Col>
                         </Row>

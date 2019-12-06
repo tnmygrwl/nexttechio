@@ -46,8 +46,8 @@ export default class Head extends Component {
                         <div>Work</div>
                         <div>Achievements</div>
                         <div>People</div>
-                        <div>Blog</div>
-                        <div>Outreach</div>
+                        <div><a style={{ color : "white", textDecoration : "none" }} href="https://medium.com/syntechx" target="_blank">Blog</a></div>
+                        <div><a style={{ color : "white", textDecoration : "none" }} href="#reach">Outreach</a></div>
                         <NavLink to="/login"> <div> <FiUser size={24}/></div></NavLink>
                        
 
