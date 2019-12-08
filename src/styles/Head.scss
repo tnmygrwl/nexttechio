@@ -11,13 +11,22 @@
 
 
 .links{
+    span{
+        display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 70vw;
+    margin: 0 auto;
+    }
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
     width: 70vw;
     margin: 0 auto;
+    
     // margin-top: 10px;
     div{
+        a{ color: white; text-decoration: none;}
         color: white;
         font-weight: 600;
         text-align: center;
@@ -97,7 +106,7 @@
 .menu{
     color:white;
 position: absolute;
-    z-index: 11;
+    z-index: 100 !important;
     left:20px;
 @media screen and (min-width: 600px) {
 display:none;
@@ -126,9 +135,10 @@ display:none;
     background:rgba(0, 0, 0, 0.856);
     width: 0vw;
     height:100vh;
-    z-index: 10;
+    z-index: 20;
     transition: 0.5s all;   
     overflow: hidden;
+    top:0;
 }
 
 .ti{
@@ -155,4 +165,20 @@ display:none;
             text-decoration: none;
         }
     }
+}
+
+.dark{
+    .links{
+        div{ 
+            color:#566782 !important;
+            a{color: #566782;}
+
+            &::after{
+                background: #566782;
+            }
+        }
+        
+       
+        }
+   
 }

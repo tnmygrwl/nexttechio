@@ -1,13 +1,21 @@
   
-let express = require("express");
-let http = require("http");
-let mongoose = require("mongoose");
-let ObjectID= require("mongodb").ObjectID;
+let express = require("express")
+let http = require("http")
+let mongoose = require("mongoose")
+let ObjectID= require("mongodb").ObjectID
 
 
-let app = express();
+let app = express()
 
-let server = http.createServer(app);
+let server = http.createServer(app)
+
+
+let use = ()=>{}
+
+var hello = 1
+
+
+
 
 //let url = "mongodb://localhost:27017/appointment";
 //  let url = "mongodb+srv://admin:Hell1234%25@appointment-yqyzr.mongodb.net/appointment?retryWrites=true";

@@ -7,12 +7,36 @@ import { FiFacebook, FiInstagram, FiLinkedin,FiGithub } from "react-icons/fi"; /
 
 
 import './styles/Main.scss'
+import Axios from 'axios';
+import moment from 'moment';
+
 
 const Space = () => <div className="space"></div>
 
 
 
 export default class Main extends Component {
+
+
+        constructor(props){
+            super();
+            this.getAchievements()
+            this.state= {
+                Achivements:[{name:'loading'},{name:'loading'},{name:'loading'},{name:'loading'}] //initial loading for the achievements
+            }
+            
+        }
+
+
+    getAchievements = ()=>{
+        Axios.get('http://localhost:5000/api/achievements/achievements').then(e => {
+            console.log(e.data)
+            this.setState({ Achivements: e.data })
+            // this.setState({loading:false})
+
+        })
+    }
+    
 
     news = [{
         title: 'Satoshi Lab Wins Accenture Blockchain Hackathon',
@@ -228,17 +252,21 @@ Working on cutting edge technology, connecting multiple device, appliances, elec
                                 <div className='gallery'>
 
                                     <div class="column">
+
+                                    
                                         <div className="imageContainer">
-                                            <div className="t2">Developer Week Hackathon</div>
-                                            <div className="t3">SAN FRANCISCO, USA</div>
+                                            <div className="t2">{this.state.Achivements[0].name}</div>
+                                            <div className="t3">{this.state.Achivements[0].description}</div>
+                                            <div className='_time'>Posted {moment(this.state.Achivements[0].date).fromNow(true)} Ago</div>
                                             <div className="imgFlex">
                                                 <img src="https://images.unsplash.com/photo-1519455953755-af066f52f1a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80" width={'100%'} /></div>
                                         </div>
 
-
+           
                                         <div className="imageContainer">
-                                            <div className="t2">Developer Week Hackathon</div>
-                                            <div className="t3">SAN FRANCISCO, USA</div>
+                                            <div className="t2">{this.state.Achivements[2].name}</div>
+                                            <div className="t3">{this.state.Achivements[2].description}</div>
+                                            <div className='_time'>Posted {moment(this.state.Achivements[2].date).fromNow(true)} Ago</div>
                                             <div className="imgFlex">
                                                 <img src="https://images.unsplash.com/photo-1515463138280-67d1dcbf317f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" width={'100%'} /></div>
                                         </div>
@@ -249,19 +277,27 @@ Working on cutting edge technology, connecting multiple device, appliances, elec
                                     <div class="column">
 
 
-                                        <div className="imageContainer">
-                                            <div className="t2">Developer Week Hackathon</div>
-                                            <div className="t3">SAN FRANCISCO, USA</div>
+                                        
+                                    <div className="imageContainer">
+                                            <div className="t2">{this.state.Achivements[1].name}</div>
+                                            <div className="t3">{this.state.Achivements[1].description}</div>
+                                            <div className='_time'>Posted {moment(this.state.Achivements[1].date).fromNow(true)} Ago</div>
                                             <div className="imgFlex">
                                                 <img src="https://images.unsplash.com/photo-1515463138280-67d1dcbf317f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" width={'100%'} /></div>
                                         </div>
 
+
+                                       
+                                    
                                         <div className="imageContainer">
-                                            <div className="t2">Developer Week Hackathon</div>
-                                            <div className="t3">SAN FRANCISCO, USA</div>
+                                            <div className="t2">{this.state.Achivements[3].name}</div>
+                                            <div className="t3">{this.state.Achivements[3].description}</div>
+                                            <div className='_time'>Posted {moment(this.state.Achivements[3].date).fromNow(true)} Ago</div>
                                             <div className="imgFlex">
                                                 <img src="https://images.unsplash.com/photo-1519455953755-af066f52f1a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80" width={'100%'} /></div>
                                         </div>
+
+           
                                     </div>
                                 </div>
                             </Col>

@@ -156,4 +156,26 @@
               margin-top: -5px;
               font-size: 14px;
           }}
+
+          ._time{
+             font-size: 10px; 
+            color: rgb(109, 109, 109);
+            position:absolute;
+            right: 10px;
+            top:8px;
+          }
+          .t2,.t3{  text-transform: capitalize;
+          }
+}
+
+
+.achievement,.team,.work{
+padding:20px;
+    .center{
+        text-align: center;
+        font-family:'Poppins';
+        font-weight: 600;
+        margin-top:100px;
+        color: #0d264c;
+    }
 }
