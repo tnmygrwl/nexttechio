@@ -5,6 +5,7 @@ import { FaAngleDown } from 'react-icons/fa';
 import { FiMenu, FiX ,FiUser} from 'react-icons/fi';
 import {  NavLink, Link  } from 'react-router-dom'
 import Links from './Links';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 
 
@@ -33,12 +34,14 @@ export default class Head extends Component {
                     <h1>WELCOME</h1>
                     INDIA'S FIRST MULTI-DISCIPINARY UNDERGRADE RESEARCH LAB
                 </div>
-
+                <AnchorLink offset='50' href="#start" style={{color:'white',cursor:'pointer'}}>
                 <div className="scroll">
                     Explore <br />
                     Next Tech Lab<br />
-                    <FaAngleDown className='icon' size={20} />
+                      <FaAngleDown className='icon' size={20} />
+                   
                 </div>
+                </AnchorLink>
             </div>
         </div>
         )

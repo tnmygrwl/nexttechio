@@ -24,6 +24,10 @@
     width: 70vw;
     margin: 0 auto;
     
+    span{ 
+        a{text-decoration: none;}
+    }
+
     // margin-top: 10px;
     div{
         a{ color: white; text-decoration: none;}
@@ -57,6 +61,9 @@
 
         display:none;
         }
+
+    
+
 }
 
 .scroll{
@@ -134,51 +141,86 @@ display:none;
     position: fixed;
     background:rgba(0, 0, 0, 0.856);
     width: 0vw;
+    left: 0;
     height:100vh;
     z-index: 20;
     transition: 0.5s all;   
     overflow: hidden;
     top:0;
+
+
+}
+
+.white{
+    *{color: white;}
 }
 
 .ti{
     width: 100vw;
+   
 }
 
-.inner{
-    color: white ;
-    div {color:white;
-         }
-    text-align: center;
-    font-size: 4vh;
-    position: relative;
-    top:50%;
-    transform: translate(0,-50%);
-    font-weight: 700;
-
-    *{transition: 0.3 all;
-        cursor: pointer;
-        margin-bottom: 20px;
-        &:hover{
-            background: white;
-            color:black;
-            text-decoration: none;
-        }
-    }
-}
 
 .dark{
+    div > * {
+        color:#566782 !important;
+    }
+  
     .links{
-        div{ 
-            color:#566782 !important;
-            a{color: #566782;}
+        span{ 
+            *{color:#566782 !important;}
+           
 
-            &::after{
+            div:after{
                 background: #566782;
             }
         }
         
-       
+        }   
+
+    }
+
+    .inner{
+        // color: white ;
+        // div,a  {color:white !important;
+        // }
+        // span{
+        //     &:only-child{
+        //         *{cursor: pointer !important; }
+        //         background: red !important;
+        //         &:hover{
+                    
+        //         }
+        //     }
+        // }
+        a > *{
+            color: white;
+            &:hover{
+                color:black;
+            }
         }
-   
-}
+
+      
+
+
+        text-align: center;
+        font-size: 4vh;
+        position: relative;
+        top:50%;
+        transform: translate(0,-50%);
+        font-weight: 700;
+    
+        *{transition: 0.3 all;
+            // cursor: pointer;
+            margin-bottom: 20px;
+            &:hover{
+                background: white;
+               
+                
+                // color:black !important;
+                text-decoration: none !important;
+
+            }
+        }
+    }
+    

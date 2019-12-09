@@ -1,0 +1,66 @@
+
+.team{
+
+    background: url('./back5.jpg');
+
+    z-index: 0;
+    .center{
+        margin-bottom: 50px;
+        z-index: 10 !important;
+        position: relative;
+    }
+
+    .til{
+        // content: '';
+        display: block;
+        background: #9be9ff7c;
+        height: 20px;
+        width:190px;
+        position: relative;
+        transform: translate(-50%,-50%);
+        left:50%;
+        top:160px;
+
+
+    }
+
+    .container_team{
+      
+        // background: rgba(226, 226, 226, 0.4);
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        :only-child{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+
+            div{
+                text-align: center;
+                font-family: 'poppins';
+                color: #0d264ccb;
+                font-weight: 600;
+                font-size: 18px;
+                height: 400px;
+                width: 300px;
+                overflow: hidden;
+                border-radius: 10px;
+                img{width: 100%; margin: 0 auto; margin-bottom: 10px;}
+                
+                @media screen and (min-width: 750px) {
+                transition: 0.3s all;
+                &:hover{
+                    margin-top:-30px;
+                    
+                }
+            }
+
+            }
+
+        }
+
+    }
+}
