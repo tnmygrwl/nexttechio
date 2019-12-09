@@ -28,7 +28,7 @@ export default class Main extends Component {
         }
 
 
-    getAchievements = ()=>{
+    getAchievements = () => {
         Axios.get('http://localhost:5000/api/achievements/achievements').then(e => {
             console.log(e.data)
             this.setState({ Achivements: e.data })
@@ -333,11 +333,10 @@ Working on cutting edge technology, connecting multiple device, appliances, elec
                                     <div>info@nextech.io</div>
                                     <br/>
                                     <div className="contactIcon"> 
-                                         <FiFacebook size={30}/>
-                                        <FiInstagram size={30}/>
-                                        <FiLinkedin size={30}/>
-                                        <FiGithub size={30}/>
-                                        
+                                        <a style={{color:'#212529'}} href="https://www.facebook.com/NextTechSRM/" target="_blank"><FiFacebook size={30}/></a>
+                                        <a style={{color:'#212529'}} href="https://www.instagram.com/nexttechlab/" target="_blank"><FiInstagram size={30}/></a>
+                                        <a style={{color:'#212529'}} href="https://www.linkedin.com/company/next-tech-lab/about/" target="_blank"><FiLinkedin size={30}/></a>
+                                        <a style={{color:'#212529'}} href="https://github.com/NextTechLab" target="_blank"><FiGithub size={30}/></a>
                                     </div>
                             </Col>
                         </Row>
