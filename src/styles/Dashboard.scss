@@ -110,5 +110,22 @@
         color:green;
         font-weight: bold;
     }
+
+
+        .shadoww{
+            -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 1s;
+
+  box-shadow: 0px 0px 0px 0px #3F729D;
+
+        }
+
+        @keyframes example {
+            0% {box-shadow: 0px 0px 0px 0px #3F729D;}
+            50% {  box-shadow: 0px 0px 8px -1px #3F729D;}
+            100% {box-shadow: 0px 0px 0px 0px #3F729D;}
+          }
   
 }

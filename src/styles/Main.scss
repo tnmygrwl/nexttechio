@@ -77,7 +77,10 @@
           }
         
           .imageContainer{
-              padding:20px;
+            //   padding:20px;
+            border-radius: 7px;
+            overflow: hidden;
+
               background-color: white;
               box-shadow: 0 0 10px -3px;
               transition: 0.3s all;
@@ -90,19 +93,34 @@
               &:hover{
                 box-shadow: 0 0 10px -1px;
               }
+              .t2{
+                margin-top: 20px;
+              }
+              .t2,.t3{
+                padding: 0 15px 0 15px;
+
+              }
         
               .t3{
                   font-size: 16px;
               }
               .imgFlex{
+                // display: flex;
+                // justify-content: center;
+
                   margin-top:10px;
                   max-height: 400px;
                   overflow: hidden;
-                  position: relative;
+                  padding:4px;
+                //   position: absolute;
+
                   img{
                     position: abolute;
+                    border-radius:8px;
+
+
                     //   top:50%;
-                    //   transform: translate(0,-25%);
+                    //   transform: translate(0,-10%);
                   }
         
                   
@@ -178,4 +196,138 @@ padding:20px;
         margin-top:100px;
         color: #0d264c;
     }
+}
+
+.achievement{
+    .imageContainer{
+        //   padding:20px;
+        border-radius: 7px;
+        overflow: hidden;
+
+          background-color: white;
+          box-shadow: 0 0 10px -3px;
+          transition: 0.3s all;
+          cursor: pointer;
+          width: 90%;
+          margin-bottom:30px;
+            position: relative;
+        left:50%;
+        transform: translate(-50%);
+          &:hover{
+            box-shadow: 0 0 10px -1px;
+          }
+          .t2{
+            margin-top: 20px;
+            font-size: 1.5em;
+            font-weight: 700;
+          }
+          .t2,.t3{
+            font-size: 1.2em;
+            padding: 0 15px 0 15px;
+
+          }
+    
+          .t3{
+              font-size: 16px;
+          }
+          .imgFlex{
+            // display: flex;
+            // justify-content: center;
+
+              margin-top:10px;
+              max-height: 400px;
+              overflow: hidden;
+              padding:4px;
+            //   position: absolute;
+
+              img{
+                position: abolute;
+                border-radius:8px;
+
+
+                //   top:50%;
+                //   transform: translate(0,-10%);
+              }
+    
+              
+    
+    
+          }
+    
+      }
+      ._time{
+        font-size: 10px; 
+       color: rgb(109, 109, 109);
+       position:absolute;
+       right: 10px;
+       top:8px;
+     }
+     .t2,.t3{  text-transform: capitalize;
+     }
+     .gallery{
+         margin-top: 50px;
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+     .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+        padding: 0 4px;
+        @media screen and (max-width: 600px) {
+    
+              -ms-flex: 100%;
+              flex: 100%;
+              max-width: 100%;
+    
+          }
+      }
+
+      .mob{
+            margin: 50px 0 0 0;
+          display: none;
+      }
+    .desk{
+        max-width: 900px;
+        margin: 0 auto;
+    }
+      @media screen and (max-width: 720px) {
+        .desk{
+            display: none !important;
+        }
+        .mob{
+            display: block;
+        }
+
+    }
+
+    .loader{
+        position:sticky;
+        bottom:10px;
+        left:45%;
+
+    }
+    .til{
+        // content: '';
+        display: block;
+        background: #9be9ff7c;
+        height: 20px;
+        width:190px;
+        position: relative;
+        transform: translate(-50%,-50%);
+        left:50%;
+        top:160px;
+
+
+    }
+    z-index: 0;
+    .center{
+        margin-bottom: 10px;
+        z-index: 10 !important;
+        position: relative;
+    }
+
 }

@@ -251,18 +251,18 @@ Working on cutting edge technology, connecting multiple device, appliances, elec
                                         <div className="imageContainer">
                                             <div className="t2">{this.state.Achivements[0].name}</div>
                                             <div className="t3">{this.state.Achivements[0].description}</div>
-                                            <div className='_time'>Posted {moment(this.state.Achivements[0].date).fromNow(true)} Ago</div>
+                                            <div className='_time'> {moment(this.state.Achivements[0].date).format('MMMM YY')}</div>
                                             <div className="imgFlex">
-                                                <img src="https://images.unsplash.com/photo-1519455953755-af066f52f1a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80" width={'100%'} /></div>
+                                                <img src={this.state.Achivements[0].imageUrl} width={'100%'} /></div>
                                         </div>
 
            
                                         <div className="imageContainer">
                                             <div className="t2">{this.state.Achivements[2].name}</div>
                                             <div className="t3">{this.state.Achivements[2].description}</div>
-                                            <div className='_time'>Posted {moment(this.state.Achivements[2].date).fromNow(true)} Ago</div>
+                                            <div className='_time'> {moment(this.state.Achivements[2].date).format('MMMM YY')}</div>
                                             <div className="imgFlex">
-                                                <img src="https://images.unsplash.com/photo-1515463138280-67d1dcbf317f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" width={'100%'} /></div>
+                                                <img src={this.state.Achivements[2].imageUrl} width={'100%'} /></div>
                                         </div>
 
                                     </div>
@@ -275,9 +275,9 @@ Working on cutting edge technology, connecting multiple device, appliances, elec
                                     <div className="imageContainer">
                                             <div className="t2">{this.state.Achivements[1].name}</div>
                                             <div className="t3">{this.state.Achivements[1].description}</div>
-                                            <div className='_time'>Posted {moment(this.state.Achivements[1].date).fromNow(true)} Ago</div>
+                                            <div className='_time'> {moment(this.state.Achivements[1].date).format('MMMM YY')}</div>
                                             <div className="imgFlex">
-                                                <img src="https://images.unsplash.com/photo-1515463138280-67d1dcbf317f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" width={'100%'} /></div>
+                                                <img src={this.state.Achivements[1].imageUrl} width={'100%'} /></div>
                                         </div>
 
 
@@ -286,11 +286,10 @@ Working on cutting edge technology, connecting multiple device, appliances, elec
                                         <div className="imageContainer">
                                             <div className="t2">{this.state.Achivements[3].name}</div>
                                             <div className="t3">{this.state.Achivements[3].description}</div>
-                                            <div className='_time'>Posted {moment(this.state.Achivements[3].date).fromNow(true)} Ago</div>
+                                            <div className='_time'> {moment(this.state.Achivements[3].date).format('MMMM YY')}</div>
                                             <div className="imgFlex">
-                                                <img src="https://drive.google.com/file/d/1CxkBWZx9OQD-5ldVADfS8PcnI_cDkc-p/preview" width={'100%'} /></div>
+                                                <img src={this.state.Achivements[3].imageUrl} width={'100%'} /></div>
                                         </div>
-
            
                                     </div>
                                 </div>

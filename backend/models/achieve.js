@@ -14,6 +14,10 @@ const AchieveSchema = new Schema({
     description : {
         type : String,
         required : true
+    },
+    imageUrl:{
+        type:String,
+        required:false
     }
 });
 

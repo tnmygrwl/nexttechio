@@ -26,7 +26,8 @@ router.get('/achievements', (req, res) => {
 router.post('/achievements', (req, res) => {
     const newAchieve = new Achieve({
         name : req.body.name,
-        description : req.body.description
+        description : req.body.description,
+        imageUrl:req.body.imageUrl
     });
 
     newAchieve.save().then(achieve => res.json(achieve));
