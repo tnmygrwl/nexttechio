@@ -5,6 +5,7 @@ import { Container, Row, Col } from 'reactstrap'; //for row & column
 import Iframe from 'react-iframe'   //for the map
 import { FiFacebook, FiInstagram, FiLinkedin,FiGithub } from "react-icons/fi"; //icons
 
+import { NavLink, Link } from 'react-router-dom'
 
 import './styles/Main.scss'
 import Axios from 'axios';
@@ -296,7 +297,7 @@ Working on cutting edge technology, connecting multiple device, appliances, elec
                             </Col>
                         </Row>
 
-                        <Button className="center" outline color="primary">READ MORE</Button>{' '}
+                        <NavLink to="/achievements">  <Button className="center" outline color="primary" >READ MORE</Button></NavLink>{' '}
 
                     </Container>
                 </Fade>
