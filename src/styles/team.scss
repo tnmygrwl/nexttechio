@@ -31,6 +31,13 @@
         height: auto;
         display: flex;
         justify-content: center;
+        .container_child{
+            img{
+            overflow: hidden !important;
+            border-radius: 5px !important;
+            max-height: 300px;  
+            }
+        }
         :only-child{
             width: 100%;
             display: flex;
@@ -39,16 +46,18 @@
             flex-wrap: wrap;
 
             div{
+        position: relative;
                 text-align: center;
                 font-family: 'poppins';
                 color: #0d264ccb;
                 font-weight: 600;
                 font-size: 18px;
                 height: 400px;
-                width: 300px;
+                width: 32%;
+                min-width: 300px;
                 overflow: hidden;
                 border-radius: 5px;
-                img{width: 100%; margin: 0 auto; margin-bottom: 10px;}
+                img{width: 300px; height:auto ; margin: 0 auto; margin-bottom: 10px;}
                 
                 @media screen and (min-width: 750px) {
                 transition: 0.3s all;
@@ -60,6 +69,20 @@
 
             }
 
+        }
+
+    }
+    .social{
+        position: absolute;
+    left: 50%;
+    bottom:34px;
+    transform: translate(-50%);
+       a{ display: inline-block;
+            padding: 0 5px 0 5px;
+            color: #0d264ccb !important;
+        &:hover{
+            color: rgba(46, 46, 46, 0.589) !important;
+        }
         }
 
     }
