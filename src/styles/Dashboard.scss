@@ -7,14 +7,37 @@
         right: 20px;
         top: 20px;
     }
+.whitee{
+    cursor: pointer;
+    overflow: hidden;
+    background: white;
+    color: black;
+    font-weight: 500;
+    .trash {
+        color: black;
+        display: inline-block !important;
+        transition: 0.1s all ease-in-out;
+        &:hover {
+            color: rgb(230, 74, 74);
+        }
+    }
 
+}
     .list {
 
         padding: 0 10px;
         position: relative;
         transition: 0.2s all ease-in-out;
         overflow: hidden;
-        height: 40px;
+        min-height: 40px;
+        padding-top: 10px;
+        // border-radius: 3px;
+
+
+       &:nth-of-type(n+2) {
+        border-left: 1px solid white;
+        margin-bottom: 5px;
+       }
 
         div {
             display: flex;
@@ -24,6 +47,7 @@
             // background: red;
             width: 90%;
             height: 100%;
+           
         }
 
         &:hover {

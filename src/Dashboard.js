@@ -134,6 +134,7 @@ cleanFile=()=>{  // clear the input file field after
         this.setState({loading:false})
         console.log('deleted')
         this.calldata()
+        this.new()
         })
 
     }
@@ -146,6 +147,7 @@ cleanFile=()=>{  // clear the input file field after
         this.setState({loading:false})
         console.log('deleted')
         this.callnews()
+        this.newNews()
         })
 
     }
@@ -466,8 +468,8 @@ flashFade=(ll)=>{
                     </div>
                     {this.state.datalist.map((v, k) => {
                         return (
-                            <div className='list'>
-                                <div onClick={() => this.active(v)}>{v.name}
+                            <div onClick={() => this.active(v)} className={this.state.id===v._id?'list whitee':'list'}>
+                                <div >{v.name}
 
                                 </div>
                                 <FiTrash2 className='trash' onClick={() => this.delete(v)} size={20} />
@@ -483,8 +485,8 @@ flashFade=(ll)=>{
                     </div>
                     {this.state.newslist.map((v, k) => {
                         return (
-                            <div className='list'>
-                                <div onClick={() => this.activeNews(v)}>{v.description}
+                            <div onClick={() => this.activeNews(v)} className={this.state.id===v._id?'list whitee':'list'}>
+                                <div >{v.description}
 
                                 </div>
                                 <FiTrash2 className='trash' onClick={() => this.deleteNews(v)} size={20} />
