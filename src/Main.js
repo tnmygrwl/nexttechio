@@ -22,8 +22,10 @@ export default class Main extends Component {
         constructor(props){
             super();
             this.getAchievements()
+            this.getNews()
             this.state= {
-                Achivements:[{name:'loading'},{name:'loading'},{name:'loading'},{name:'loading'}] //initial loading for the achievements
+                Achivements:[{name:'loading'},{name:'loading'},{name:'loading'},{name:'loading'}], //initial loading for the achievements,,
+                news:[]
             }
             
         }
@@ -38,30 +40,37 @@ export default class Main extends Component {
         })
     }
     
+    getNews = () => {
+        Axios.get('http://localhost:5000/api/newsapi/news').then(e => {
+            console.log(e.data)
+            this.setState({ news: e.data })
+            // this.setState({loading:false})
+        })
+    }
 
-    news = [{
-        title: 'Satoshi Lab Wins Accenture Blockchain Hackathon',
-        date: 'Dec 25 2018'
-    },
-    {
-        title: 'Satoshi Lab Wins Accenture Blockchain Hackathon',
-        date: 'Dec 25 2018'
-    },
-    {
-        title: 'Satoshi Lab Wins Accenture Blockchain Hackathon',
-        date: 'Dec 25 2018'
-    },
-    {
-        title: 'Satoshi Lab Wins Accenture Blockchain Hackathon',
-        date: 'Dec 25 2018'
-    },
-    {
-        title: 'Satoshi Lab Wins Accenture Blockchain Hackathon',
-        date: 'Dec 25 2018'
-    }, {
-        title: 'Satoshi Lab Wins Accenture Blockchain Hackathon',
-        date: 'Dec 25 2018'
-    }]
+    // news = [{
+    //     title: 'Satoshi Lab Wins Accenture Blockchain Hackathon',
+    //     date: 'Dec 25 2018'
+    // },
+    // {
+    //     title: 'Satoshi Lab Wins Accenture Blockchain Hackathon',
+    //     date: 'Dec 25 2018'
+    // },
+    // {
+    //     title: 'Satoshi Lab Wins Accenture Blockchain Hackathon',
+    //     date: 'Dec 25 2018'
+    // },
+    // {
+    //     title: 'Satoshi Lab Wins Accenture Blockchain Hackathon',
+    //     date: 'Dec 25 2018'
+    // },
+    // {
+    //     title: 'Satoshi Lab Wins Accenture Blockchain Hackathon',
+    //     date: 'Dec 25 2018'
+    // }, {
+    //     title: 'Satoshi Lab Wins Accenture Blockchain Hackathon',
+    //     date: 'Dec 25 2018'
+    // }]
 
 
     render() {
@@ -218,11 +227,11 @@ Working on cutting edge technology, connecting multiple device, appliances, elec
                             <Col>
                                 <div className='news'>
 
-                                    {this.news.slice(0, 4).map((v, k) => {
+                                    {this.state.news.slice(0, 4).map((v, k) => {
                                         return (
                                             <div className="items">
-                                                <div className="t"> {v.title} </div>
-                                                <div className="d">{v.date}</div>
+                                                <div className="t"> {v.description} </div>
+                                                <div className="d">{moment(v.date).format('MMM DD YYYY')}</div>
                                             </div>
                                         )
                                     })}

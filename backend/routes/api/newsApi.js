@@ -17,6 +17,7 @@ router.get('/news', (req, res) => {
 router.post('/createnews', (req, res) => {
     const newNews = new News({
         description : req.body.description,
+        date:req.body.date
     });
     newNews.save().then(news => res.json(news));
 
