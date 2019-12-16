@@ -4,6 +4,7 @@ const bodyParser = require('body-parser')
 
 const achieve = require('./routes/api/achieve');
 const user = require('./routes/api/user');
+const news = require('./routes/api/newsApi');
 
 
 const app = express();
@@ -26,6 +27,7 @@ mongoose.connect(db, { useUnifiedTopology: true, useNewUrlParser: true })
 
 // Use routes
 app.use('/api/achievements', achieve);
+app.use('/api/newsapi', news);
 app.use('/api/user', user);
 
 
