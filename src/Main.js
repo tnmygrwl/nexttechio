@@ -48,31 +48,6 @@ export default class Main extends Component {
         })
     }
 
-    // news = [{
-    //     title: 'Satoshi Lab Wins Accenture Blockchain Hackathon',
-    //     date: 'Dec 25 2018'
-    // },
-    // {
-    //     title: 'Satoshi Lab Wins Accenture Blockchain Hackathon',
-    //     date: 'Dec 25 2018'
-    // },
-    // {
-    //     title: 'Satoshi Lab Wins Accenture Blockchain Hackathon',
-    //     date: 'Dec 25 2018'
-    // },
-    // {
-    //     title: 'Satoshi Lab Wins Accenture Blockchain Hackathon',
-    //     date: 'Dec 25 2018'
-    // },
-    // {
-    //     title: 'Satoshi Lab Wins Accenture Blockchain Hackathon',
-    //     date: 'Dec 25 2018'
-    // }, {
-    //     title: 'Satoshi Lab Wins Accenture Blockchain Hackathon',
-    //     date: 'Dec 25 2018'
-    // }]
-
-
     render() {
         return (
             <div className="main">
@@ -227,7 +202,7 @@ Working on cutting edge technology, connecting multiple device, appliances, elec
                             <Col>
                                 <div className='news'>
 
-                                    {this.state.news.slice(0, 4).map((v, k) => {
+                                    {this.state.news.slice(0, 6).map((v, k) => {
                                         return (
                                             <div className="items">
                                                 <div className="t"> {v.description} </div>
