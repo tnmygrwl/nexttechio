@@ -32,7 +32,7 @@ export default class Head extends Component {
                 </Fade>
                 <div className="hero">
                     <h1>WELCOME</h1>
-                    INDIA'S FIRST MULTI-DISCIPINARY UNDERGRADE RESEARCH LAB
+                    INDIA'S FIRST MULTI-DISCIPINARY UNDERGRADUATE RESEARCH LAB
                 </div>
                 <AnchorLink offset='50' href="#start" style={{color:'white',cursor:'pointer'}}>
                 <div className="scroll">

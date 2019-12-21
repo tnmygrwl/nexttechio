@@ -82,7 +82,7 @@ export default class Main extends Component {
                                 </div>
                             </Col>
                             <Col xs="5">
-                                <h3>McArthy Lab</h3>
+                                <h3>McCarthy Lab</h3>
                                 <i><h6>Artificial Intelligence</h6></i>
                                 Understanding architectures that exhibit “intelligence” and deploying novel models to solve real world problems.<br /> <br />
                             </Col>
@@ -144,12 +144,12 @@ export default class Main extends Component {
                         <Row>
                             <Col xs="1"></Col>
                             <Col xs="5">
-                                <h3>IOT Lab</h3>
-                                <i><h6>Internet of Things
+                                <h3>Tesla Lab</h3>
+                                <i><h6>Internet of Things, Electrical System
 
 </h6></i>
 
-Working on cutting edge technology, connecting multiple device, appliances, electronics and other ‘things’ to proliferate the standards of day-to-day life.
+Working on cutting edge technology, connecting multiple device, appliances, electronics and other ‘things’ to proliferate the standards of day-to-day life.Researching on Smart Grids and load forecasting to improve transmission system and decrease power losses.Working on cutting edge technology, connecting multiple device, appliances, electronics and other ‘things’ to proliferate the standards of day-to-day life.
 
                                 <br /> <br />
 
@@ -169,28 +169,7 @@ Working on cutting edge technology, connecting multiple device, appliances, elec
                     <Space />
                     <Space />
 
-                    <Fade>
-                        <Row>
-                            <Col xs="6">
-                                <div className='imgg'>
-                                    <img src={'./images/tesla.png'} width='100%' />
-                                </div>
-                            </Col>
-                            <Col xs="5">
-                                <h3>Tesla Lab</h3>
-                                <i><h6>Electrical System</h6></i>
-
-                                Researching on Smart Grids and load forecasting to improve transmission system and decrease power losses.<br /> <br />
-
-                            </Col>
-                        </Row>
-                    </Fade>
-
                 </Container>
-
-
-
-                <Space />
 
                 <Fade>
                     <Container className="container fi">
