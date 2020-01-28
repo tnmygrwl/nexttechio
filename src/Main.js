@@ -84,7 +84,8 @@ export default class Main extends Component {
                             <Col xs="5">
                                 <h3>McCarthy Lab</h3>
                                 <i><h6>Artificial Intelligence</h6></i>
-                                Understanding architectures that exhibit “intelligence” and deploying novel models to solve real world problems.<br /> <br />
+                                Understanding and creating agents that exhibit “intelligence” to solve complex real-world problems in the realm of computational, cognitive and information science.
+.<br /> <br />
                             </Col>
                         </Row>
                     </Fade>
@@ -128,7 +129,7 @@ export default class Main extends Component {
 
 </h6></i>
 
-                                Focusing on blockchain protocol analysis, security and development of Decentralised application on framework like ethereum and hyperledger.
+                                Focusing on blockchain protocol analysis, security and development of decentralized applications using frameworks like Ethereum and Hyperledger.
 <br /> <br />
 
                             </Col>
